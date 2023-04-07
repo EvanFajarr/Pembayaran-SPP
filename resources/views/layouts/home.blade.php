@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>spp </title>
+    <title>spp Home</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="/assets/img/logo.png" type="image/x-icon" />
 
@@ -39,12 +39,12 @@
 
     <div class="wrapper">
         <div class="main-header">
-            @include('componen.logo-header')
+            @include('item.logo-header')
 
-            @include('componen.navbar')
+            @include('item.navbar')
         </div>
 
-        @include('componen.sidebar')
+        @include('item.sidebar')
 
         <div class="main-panel">
             <div class="content">

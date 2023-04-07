@@ -14,21 +14,16 @@
                                 <div class="avatar-lg"><img src="/assets/img/profile.jpg" alt="image profile"
                                         class="avatar-img rounded"></div>
                                 <div class="u-text">
-                                    <h5> {{ auth()->guard('user')->user()->username_15483 }}</h5>
+
                                </div>
                         </li>
                         <li>
-                        
+                           
+
                             <form action="{{ url('/logout') }}" method="post">
                                 @csrf
-                                   <button type="submit" class="btn btn-outline-warning "><i class="bi bi-box-arrow-right">Logout </i></button>
-                              </form>
-                            
-
-                            {{-- <form action="{{ url('/logout') }}" method="post">
-                                @csrf
                                    <button type="submit" class="btn btn-outline-warning "><i class="bi bi-box-arrow-right">Logout Siswa </i></button>
-                              </form> --}}
+                              </form>
                            
                         </li>
                     </div>

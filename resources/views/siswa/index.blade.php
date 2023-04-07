@@ -20,6 +20,7 @@
                         <th>kelas</th>
                         <th>Alamat</th>
                         <th>No telp</th>
+                        {{-- <th>No telp</th> --}}
                         <th>ID SPP</th>
                         <th>Aksi</th>
                     </tr>

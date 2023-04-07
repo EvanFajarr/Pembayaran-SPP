@@ -97,6 +97,18 @@
                 @enderror
             </div>
 
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="number" class="form-control @error('password') is-invalid @enderror" id="password"
+                    name="password" placeholder="Masukan Password" value="{{ old('password') }}" required>
+                @error('password')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+
             <div class="row justify-content-end">
                 <a href="{{ route('siswa.index') }}" class="btn btn-sm btn-round btn-danger mx-1">Kembali</a>
                 <button type="submit" class="btn btn-sm btn-round btn-success mx-1">Submit</button>

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('nama_15483');
             $table->unsignedBigInteger('id_kelas_15483');
             $table->text('alamat_15483');
+            $table->string('password');
             $table->string('no_telp_15483');
             $table->unsignedBigInteger('id_spp_15483');
             $table->timestamps();

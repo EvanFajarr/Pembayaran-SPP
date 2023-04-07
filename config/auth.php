@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'siswa',
         'passwords' => 'users',
     ],
 
@@ -36,17 +36,17 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
+        // 'web' => [
+        //     'driver' => 'session',
+        //     'provider' => 'users',
+        // ],
+        'siswa'=>[
+            'driver'=>'session',
+            'provider'=>'siswa',
         ],
-        'admin' => [
-            'driver' => 'session',
-            'provider' => 'admin',
-        ],
-        'petugas' => [
-            'driver' => 'session',
-            'provider' => 'petugas',
+        'user'=>[
+            'driver'=>'session',
+            'provider'=>'users',
         ],
     ],
 
@@ -72,14 +72,9 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'admin' => [
+        'siswa' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
-
-        'petugas' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' =>  App\Models\siswa::class,
         ],
 
         // 'users' => [

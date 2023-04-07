@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Go Auction - {{ $title }}</title>
+    <title>Go Auction - </title>
 
     <link rel="icon" href="/assets/img/logo.png" type="image/x-icon" />
 

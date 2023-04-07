@@ -17,9 +17,9 @@ class guestonly
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::guard('admin')->check()) {
+        if (Auth::guard('user')->check()) {
             return redirect()->route('dashboard');
-        } else if (Auth::guard('petugas')->check()) {
+        } else if (Auth::guard('user')->check()) {
             return redirect()->route('dashboard');
         } else {
             return $next($request);

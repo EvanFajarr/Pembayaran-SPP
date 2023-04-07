@@ -7,7 +7,7 @@ use App\Models\siswa;
 use App\Models\spp;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Hash;
 
 class siswaController extends Controller
 {
@@ -55,12 +55,16 @@ class siswaController extends Controller
             'nisn_15483' => 'required|max:10',
             'nis_15483' => 'required|max:10',
             'nama_15483' => 'required|max:255',
+            'password' => 'required|max:255',
             'id_kelas_15483' => 'required|max:10',
             'alamat_15483' => 'required|max:200',
             'no_telp_15483' => 'required|max:20',
             'id_spp_15483' => 'required|max:5',
 
         ]);
+
+        $validateData['password'] = Hash::make($request->password);
+        
         siswa::create($validateData);
         toast('Data Baru Ditambahkan', 'success');
 

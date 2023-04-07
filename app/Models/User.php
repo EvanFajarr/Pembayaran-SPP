@@ -19,17 +19,25 @@ class User extends Authenticatable
      */
     protected $guarded = ['id_petugas_15483'];
 
-    public function getAuthPassword()
-    {
-        return $this->password_15483;
-    }
+    // public function getAuthPassword()
+    // {
+    //     return $this->password_15483;
+    // }
+    protected $primaryKey = 'id_petugas_15483';
+    protected $fillable = [
+        'id_petugas_15483',
+        'username_15483',
+        'password',
+        'nama_petugas_15483',
+        'level_15483'
+    ];
     /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
      */
     protected $hidden = [
-        'password_15483',
+        'password',
         'remember_token',
     ];
 
